@@ -5,12 +5,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instagram API</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
   <script src="api.js" defer></script>
+  <style>
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin: 40px auto;
+      padding: 0;
+      box-sizing: border-box;
+      max-width: 80vw;
+    }
+
+    h1 {
+      background-color: azure;
+      color: darkcyan;
+      padding: 20px;
+      border: 1px solid cadetblue;
+      border-radius: 4px;
+    }
+
+    #gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .media {
+      width: calc(25% - 1rem);
+    }
+
+    .media:hover {
+      opacity: .85;
+      cursor: pointer;
+    }
+
+    img,
+    video {
+      width: 100%;
+      border-radius: 6px;
+      border: 6px solid transparent;
+    }
+
+    img:hover,
+    video:hover {
+      border-color: darkcyan;
+    }
+  </style>
 </head>
 
 <body>
   <h1>Instagram API</h1>
   <hr>
+  <div id="gallery"></div>
 </body>
 
 </html>
